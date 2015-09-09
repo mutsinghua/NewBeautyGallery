@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/icon_item_frame_size"
+    android:layout_height="@dimen/icon_item_frame_size"
+    android:background="@drawable/stack_frame_gold"
+    android:gravity="center"
+    >
+
+    <org.androidbook.gallery.beauty.ui.view.ProcessImageView
+        android:id="@+id/thumb"
+        android:layout_width="@dimen/grid_item_size"
+        android:layout_height="@dimen/grid_item_size"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

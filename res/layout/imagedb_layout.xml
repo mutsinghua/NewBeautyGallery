@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frame_bg"
+    android:orientation="vertical" >
+
+    <!-- 广告 -->
+
+    <LinearLayout
+        android:id="@+id/miniAdLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <ListView
+        android:id="@+id/listView_imagedb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/miniAdLinearLayout"
+        android:cacheColorHint="@null"
+        android:fastScrollEnabled="true"
+        android:scrollbarThumbVertical="@drawable/scroller_pressed_new" >
+    </ListView>
+
+    <RelativeLayout   android:id="@+id/waiting_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/hftransparent"
+            android:visibility="gone"
+            >
+
+        <TextView
+            android:id="@+id/need_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/load_thumb"
+            android:textColor="#99ffffff"
+            android:textSize="15dp"
+             />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/need_points"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

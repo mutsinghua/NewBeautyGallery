@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/select_all" android:icon="@drawable/select_all" android:menuCategory="secondary" android:title="@string/select_all" android:orderInCategory="1">
+    </item>
+    <item android:id="@+id/unselect_all" android:icon="@drawable/unselect" android:menuCategory="secondary" android:title="@string/unselect_all" android:orderInCategory="2"></item>
+    <item android:id="@+id/rev_select_all" android:icon="@drawable/deselect" android:title="@string/rev_select" android:orderInCategory="3" android:menuCategory="secondary"></item>
+    <item android:id="@+id/create_folder" android:icon="@drawable/new_folder" android:title="@string/create_fav_folder" android:orderInCategory="4" android:menuCategory="secondary"></item>
+    <item android:id="@+id/delete_folder" android:icon="@drawable/delete" android:title="@string/delete" android:orderInCategory="5" android:menuCategory="secondary"></item>
+    
+
+</menu>
